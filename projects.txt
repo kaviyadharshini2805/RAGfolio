@@ -1,0 +1,250 @@
+PROJECTS
+
+1. Candidate Intelligence Platform
+Description:
+A scalable platform that ingests candidate information from multiple sources, normalizes data, resolves conflicts using configurable rules, tracks data provenance, and generates structured outputs for analytics, reporting, and PDF export.
+
+Tech Stack:
+Python, FastAPI, PostgreSQL
+
+Skills Demonstrated:
+Data Engineering, Backend Development, Data Processing, System Design
+
+--------------------------------------------------
+
+2. AI Research Buddy
+Description:
+An AI-powered research assistant that helps users research companies and topics through a conversational interface. Supports authentication, personal dashboards, optimized token usage, and PDF export.
+
+Tech Stack:
+Python, FastAPI, LLMs
+
+Skills Demonstrated:
+Generative AI, Prompt Engineering, Backend Development
+
+--------------------------------------------------
+
+3. ResumeRAG
+Description:
+A Retrieval-Augmented Generation (RAG) application designed to answer questions about resume content. The system extracts text from PDF resumes using PyPDF2, chunks the content into manageable segments, generates vector embeddings using Sentence Transformers, stores them in FAISS vector database for efficient similarity search, and retrieves relevant context to answer user queries using a Large Language Model. Supports multiple resume uploads and maintains semantic understanding of professional experience, skills, and qualifications.
+
+Role:
+Solo Developer - Full implementation of RAG pipeline
+
+Tech Stack:
+Python, FAISS, Sentence Transformers, PyPDF2, LLMs
+
+Key Achievements:
+- Implemented PDF text extraction and preprocessing pipeline
+- Built FAISS vector database for efficient semantic search
+- Generated high-quality embeddings using Sentence Transformers
+- Designed context retrieval system with relevance ranking
+- Integrated LLM for natural language question answering
+- Created modular architecture for easy maintenance and scaling
+
+Skills Demonstrated:
+RAG Architecture, Vector Databases, Document Processing, Semantic Search, LLM Integration, PDF Parsing, Information Retrieval
+
+--------------------------------------------------
+
+4. AI File Organizer MCP
+Description:
+An intelligent file management application built using the Model Context Protocol (MCP). It organizes files automatically using AI-powered workflows and natural language commands.
+
+Tech Stack:
+Python, MCP
+
+Skills Demonstrated:
+AI Agents, MCP, Automation, File Management
+
+--------------------------------------------------
+
+5. Elafina - Personal AI Chatbot
+Description:
+A production-ready personal portfolio chatbot built using Retrieval-Augmented Generation (RAG) architecture. The system ingests personal information from structured text files (resume, skills, projects, experience, education), chunks and embeds the content using HuggingFace Sentence Transformers (all-MiniLM-L6-v2), stores vectors in ChromaDB for persistent semantic search, and uses Google Gemini (gemini-2.5-flash) as the LLM for natural conversational responses. Built with modular architecture separating concerns: data loading, embedding generation, vector database management, RAG pipeline, and chatbot interface. Supports real-time knowledge base refresh and maintains conversation history.
+
+Role:
+Solo Developer - Designed and implemented complete RAG system from scratch
+
+Tech Stack:
+Python, Streamlit, ChromaDB, LangChain, HuggingFace Embeddings (Sentence Transformers), Google Gemini API, LangChain Expression Language (LCEL)
+
+Key Achievements:
+- Built complete RAG pipeline with modular architecture (loader, embeddings, vectordb, RAG, chatbot modules)
+- Implemented semantic search using ChromaDB with persistent storage
+- Integrated HuggingFace embeddings for free local embedding generation (no API costs)
+- Used Google Gemini API for chat responses with cost-effective model selection
+- Created interactive Streamlit UI with conversation history and knowledge base management
+- Handled document chunking with overlap for better context retrieval
+- Implemented proper error handling and environment configuration
+- Achieved accurate context-aware responses about professional background
+
+Skills Demonstrated:
+RAG Architecture, Vector Databases, Semantic Search, LLM Integration, Prompt Engineering, Embedding Generation, Backend Design, API Integration, Chatbot Development, Full-Stack Development
+
+--------------------------------------------------
+
+6. Agri Chatbot
+Description:
+A domain-specific RAG-powered chatbot designed to assist farmers and agricultural professionals with information about crops, fertilizers, soil management, irrigation techniques, and plant disease identification. The system uses a curated agricultural knowledge base that is chunked, embedded, and stored in a vector database. When users ask questions, the chatbot retrieves relevant agricultural context and generates accurate, context-aware responses using an LLM. Built with Streamlit for an interactive and user-friendly interface.
+
+Role:
+Solo Developer - Designed and built agriculture-focused RAG system
+
+Tech Stack:
+Python, Streamlit, RAG, Vector Database, LLMs, NLP
+
+Key Achievements:
+- Built domain-specific RAG system for agricultural knowledge
+- Curated and processed agricultural knowledge base covering crops, diseases, and farming practices
+- Implemented semantic search for accurate information retrieval
+- Designed conversational interface for farmers and agricultural workers
+- Achieved high accuracy in answering domain-specific agricultural questions
+- Created user-friendly Streamlit interface for easy adoption
+
+Skills Demonstrated:
+Generative AI, Domain-Specific RAG, Information Retrieval, NLP, Chatbot Design, Knowledge Base Curation, Prompt Engineering
+
+--------------------------------------------------
+
+7. Pothole Detector System
+Description:
+A full-stack web application for pothole detection using a YOLOv8 model. Includes image upload, real-time inference, authentication, report management, PostgreSQL integration, and an admin dashboard.
+
+Tech Stack:
+React, FastAPI, YOLOv8, PostgreSQL
+
+Skills Demonstrated:
+Computer Vision, Deep Learning, Full-Stack Development
+
+--------------------------------------------------
+
+8. Digit Recognition using Feedforward Neural Network
+Description:
+A deep learning model that classifies handwritten digits from the MNIST dataset using TensorFlow and Keras.
+
+Tech Stack:
+Python, TensorFlow, Keras
+
+Skills Demonstrated:
+Deep Learning, Neural Networks, Image Classification
+
+--------------------------------------------------
+
+9. Hyperparameter Tuning
+Description:
+A Streamlit application demonstrating GridSearchCV and RandomizedSearchCV for optimizing Decision Tree hyperparameters on the Iris dataset.
+
+Tech Stack:
+Python, Streamlit, Scikit-learn
+
+Skills Demonstrated:
+Machine Learning, Model Optimization
+
+--------------------------------------------------
+
+10. House Price Predictor
+Description:
+A machine learning web application that predicts house prices from user-provided property features using a trained regression model.
+
+Tech Stack:
+Python, Streamlit, Scikit-learn
+
+Skills Demonstrated:
+Regression, Data Preprocessing, Model Deployment
+
+--------------------------------------------------
+
+11. Heart Disease Predictor
+Description:
+A machine learning application that predicts the likelihood of heart disease using medical attributes and Logistic Regression.
+
+Tech Stack:
+Python, Streamlit, Scikit-learn
+
+Skills Demonstrated:
+Classification, Healthcare Analytics
+
+--------------------------------------------------
+
+12. Student Mark Prediction
+Description:
+A machine learning application that predicts students' final scores based on study habits, attendance, and academic factors.
+
+Tech Stack:
+Python, Streamlit, Scikit-learn
+
+Skills Demonstrated:
+Regression, Predictive Analytics
+
+--------------------------------------------------
+
+13. Food Energy Prediction
+Description:
+A machine learning model that predicts the calorie content of food items after preprocessing, feature selection, and Decision Tree training.
+
+Tech Stack:
+Python, Scikit-learn
+
+Skills Demonstrated:
+Feature Engineering, Data Preprocessing, Regression
+
+--------------------------------------------------
+
+14. Supermarket Inventory Prediction
+Description:
+A clustering application that groups supermarket inventory items based on stock quantity, reorder level, pricing, and supplier information to assist inventory management.
+
+Tech Stack:
+Python, Streamlit, Scikit-learn
+
+Skills Demonstrated:
+Clustering, Data Analysis
+
+--------------------------------------------------
+
+15. Cancer Prediction
+Description:
+A machine learning application that predicts whether a tumor is benign or malignant using the K-Nearest Neighbors algorithm.
+
+Tech Stack:
+Python, Streamlit, Scikit-learn
+
+Skills Demonstrated:
+Classification, Healthcare Analytics
+
+--------------------------------------------------
+
+16. Mushroom Classifier
+Description:
+A Naive Bayes classifier that predicts whether mushrooms are edible or poisonous based on physical characteristics.
+
+Tech Stack:
+Python, Streamlit, Scikit-learn
+
+Skills Demonstrated:
+Classification, Machine Learning
+
+--------------------------------------------------
+
+17. Titanic Survival Prediction
+Description:
+A Decision Tree-based machine learning application that predicts passenger survival using the Titanic dataset.
+
+Tech Stack:
+Python, Streamlit, Scikit-learn
+
+Skills Demonstrated:
+Classification, Data Analysis
+
+--------------------------------------------------
+
+18. Sales Analysis
+Description:
+Performed exploratory data analysis and visualization to identify sales trends, customer behavior, and business insights.
+
+Tech Stack:
+Python, Pandas, Matplotlib
+
+Skills Demonstrated:
+EDA, Data Visualization, Business Analytics

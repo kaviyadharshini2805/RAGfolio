@@ -1,0 +1,127 @@
+SKILLS
+
+Programming Languages
+
+Python
+Primary programming language used for data analysis, machine learning, backend development, automation, and Generative AI applications.
+
+Java
+Used for object-oriented programming, data structures, problem solving, and application development.
+
+SQL
+Used to query, manipulate, and manage relational databases.
+
+--------------------------------------------------
+
+Data Science
+
+Data Cleaning
+Experienced in cleaning and preparing datasets by handling missing values, duplicates, and inconsistent data.
+
+Data Preprocessing
+Worked with encoding, feature scaling, feature selection, and dataset transformation for machine learning models.
+
+Exploratory Data Analysis (EDA)
+Performed statistical analysis and data visualization to identify patterns, trends, and insights.
+
+Data Visualization
+Created visualizations using Matplotlib to communicate analytical findings.
+
+Feature Engineering
+Prepared and transformed features to improve machine learning model performance.
+
+--------------------------------------------------
+
+Machine Learning
+
+Supervised Learning
+Built classification and regression models using algorithms such as Decision Trees, Logistic Regression, KNN, Naive Bayes, and XGBoost.
+
+Unsupervised Learning
+Implemented clustering techniques including K-Means for data segmentation.
+
+Model Evaluation
+Evaluated models using appropriate performance metrics and optimized them through hyperparameter tuning.
+
+Hyperparameter Tuning
+Used GridSearchCV and RandomizedSearchCV to improve model performance.
+
+Deep Learning
+Developed neural network models using TensorFlow and Keras for image classification tasks.
+
+--------------------------------------------------
+
+Generative AI
+
+Retrieval-Augmented Generation (RAG)
+Built multiple RAG applications using vector databases and Large Language Models to answer domain-specific questions.
+
+Large Language Models (LLMs)
+Integrated LLMs into chatbot and research applications for intelligent question answering.
+
+Prompt Engineering
+Designed prompts to improve response quality and optimize LLM outputs.
+
+Vector Databases
+Worked with FAISS and ChromaDB for semantic search and context retrieval.
+
+Sentence Transformers
+Generated embeddings for semantic similarity and document retrieval.
+
+Model Context Protocol (MCP)
+Built an MCP-based AI file organizer for intelligent file management and automation.
+
+--------------------------------------------------
+
+Backend Development
+
+FastAPI
+Developed RESTful backend services and AI-powered web applications.
+
+Streamlit
+Built interactive web interfaces for machine learning and AI applications.
+
+Authentication
+Implemented login and user authentication in web applications.
+
+REST APIs
+Designed backend APIs for AI and data-driven applications.
+
+--------------------------------------------------
+
+Databases
+
+PostgreSQL
+Used PostgreSQL for storing and managing structured application data.
+
+--------------------------------------------------
+
+Developer Tools
+
+Git
+Used Git for version control and collaborative development.
+
+GitHub
+Maintained public repositories and managed project source code.
+
+VS Code
+Primary development environment for software and AI projects.
+
+--------------------------------------------------
+
+Core Skills
+
+Problem Solving
+Approach problems systematically by analyzing requirements and designing practical solutions.
+
+Analytical Thinking
+Apply logical reasoning and data analysis to solve technical challenges.
+
+Debugging
+Identify and resolve software issues efficiently.
+
+Software Development
+Experience building end-to-end applications from development to deployment.
+
+Continuous Learning
+Regularly build projects and explore new AI, machine learning, and software development technologies.

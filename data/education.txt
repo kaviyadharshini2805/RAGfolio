@@ -1,0 +1,57 @@
+EDUCATION
+
+Current Education
+
+Degree:
+Bachelor of Engineering (B.E.)
+
+Branch:
+Computer Science and Engineering (CSE)
+
+Institution:
+Rathinam Technical Campus
+
+Status:
+Final-Year Student
+
+Location:
+Tamil Nadu, India
+
+Overview:
+Currently pursuing a Bachelor's degree in Computer Science and Engineering with a focus on Artificial Intelligence, Data Science, Machine Learning, Generative AI, Backend Development, and Software Engineering. Gained practical experience through internships, academic coursework, coding practice, and hands-on projects.
+
+Core Subjects:
+- Data Structures and Algorithms
+- Object-Oriented Programming
+- Database Management Systems (DBMS)
+- Operating Systems
+- Computer Networks
+- Compiler Design
+- Cryptography and Network Security
+- Computer Graphics
+- Embedded Systems and IoT
+- Machine Learning
+- Artificial Intelligence
+
+Technical Learning:
+- Python Programming
+- Java Programming
+- C Programming
+- SQL and PostgreSQL
+- Data Analysis
+- Machine Learning
+- Deep Learning
+- Natural Language Processing
+- Generative AI
+- Retrieval-Augmented Generation (RAG)
+- FastAPI
+- Streamlit
+
+Academic Activities:
+- Built AI, Machine Learning, and Data Science projects.
+- Completed multiple Data Science internships.
+- Solved coding problems to strengthen problem-solving skills.
+- Developed full-stack AI applications using FastAPI and Streamlit.
+
+Career Focus:
+Interested in Data Science, Machine Learning Engineering, Generative AI, and Backend Development, with a focus on building intelligent, scalable, and practical applications.

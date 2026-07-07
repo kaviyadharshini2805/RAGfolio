@@ -1,0 +1,98 @@
+EXPERIENCE
+
+1. Data Science Intern
+Company: Sabudh
+
+Duration:
+6 Months
+
+Overview:
+Completed a six-month internship focused on Machine Learning, Deep Learning, and Natural Language Processing while working on practical data science tasks and model development.
+
+Responsibilities:
+- Performed data preprocessing and feature engineering.
+- Built and evaluated machine learning models.
+- Applied deep learning techniques for predictive tasks.
+- Worked on Natural Language Processing concepts and applications.
+- Analyzed datasets to extract meaningful insights.
+
+Technologies:
+Python
+NumPy
+Pandas
+Scikit-learn
+TensorFlow
+Machine Learning
+Deep Learning
+Natural Language Processing (NLP)
+
+--------------------------------------------------
+
+2. Data Science Intern
+Company: Adventure Technology Solutions
+
+Overview:
+Worked on data analysis and predictive modeling using Python and SQL to improve data quality and support data-driven decision-making.
+
+Responsibilities:
+- Performed data cleaning and preprocessing on 10,000+ records.
+- Conducted exploratory data analysis (EDA).
+- Applied feature engineering techniques.
+- Built and optimized machine learning models.
+- Evaluated model performance and generated analytical insights.
+
+Technologies:
+Python
+SQL
+Pandas
+NumPy
+Scikit-learn
+
+--------------------------------------------------
+
+3. Data Science Intern
+Company: InternBoot
+
+Overview:
+Worked on data preparation, exploratory data analysis, and dashboard creation using Python and SQL.
+
+Responsibilities:
+- Cleaned and processed datasets containing 8,000+ records.
+- Performed exploratory data analysis (EDA).
+- Created dashboards and visualizations to identify trends.
+- Supported data-driven decision-making through analytical reports.
+
+Technologies:
+Python
+SQL
+Pandas
+Matplotlib
+Data Visualization
+
+--------------------------------------------------
+
+Overall Experience
+
+Areas Worked:
+- Data Cleaning
+- Data Preprocessing
+- Feature Engineering
+- Exploratory Data Analysis (EDA)
+- Data Visualization
+- Machine Learning
+- Deep Learning
+- Natural Language Processing
+- Predictive Analytics
+- Model Evaluation
+
+Primary Technologies:
+Python
+SQL
+FastAPI
+Pandas
+NumPy
+Scikit-learn
+TensorFlow
+PostgreSQL
+Git
+GitHub
