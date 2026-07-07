@@ -78,7 +78,7 @@ This project demonstrates the implementation of a production-style RAG pipeline 
 | Language        | Python                                                  |
 | Framework       | LangChain                                               |
 | LLM             | Google Gemini                                           |
-| Embeddings      | Hugging Face (`sentence-transformers/all-MiniLM-L6-v2`) |
+| Embeddings      | Hugging Face (`all-MiniLM-L6-v2`)                       |
 | Vector Database | ChromaDB                                                |
 | Frontend        | Streamlit                                               |
 | Environment     | python-dotenv                                           |
@@ -122,7 +122,7 @@ RAGfolio/
 │   ├── PROJECT_SUMMARY.md
 │   └── QUICKSTART.md
 │
-└── chroma_db/      # Generated automatically
+└── chroma_db/ 
 ```
 
 ---
@@ -137,7 +137,7 @@ RAGfolio/
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/<your-username>/RAGfolio.git
+git clone https://github.com/<kaviyadharshini2805>/RAGfolio.git
 
 cd RAGfolio
 ```
