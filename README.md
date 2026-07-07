@@ -9,14 +9,13 @@
 
 <p align="center">
 
-![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge\&logo=python\&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Google Gemini](https://img.shields.io/badge/Google%20Gemini-4285F4?style=for-the-badge&logo=google&logoColor=white)
+![LangChain](https://img.shields.io/badge/LangChain-121212?style=for-the-badge)
 ![RAG](https://img.shields.io/badge/RAG-Retrieval--Augmented--Generation-2563EB?style=for-the-badge)
-![Google Gemini](https://img.shields.io/badge/Google-Gemini-4285F4?style=for-the-badge\&logo=google\&logoColor=white)
-![LangChain](https://img.shields.io/badge/LangChain-Framework-121212?style=for-the-badge)
-![Hugging Face](https://img.shields.io/badge/HuggingFace-all--MiniLM--L6--v2-FFD21E?style=for-the-badge\&logo=huggingface\&logoColor=black)
-![ChromaDB](https://img.shields.io/badge/ChromaDB-Vector%20Database-5B4BDB?style=for-the-badge)
-![Streamlit](https://img.shields.io/badge/Streamlit-Web%20App-FF4B4B?style=for-the-badge\&logo=streamlit\&logoColor=white)
-![License](https://img.shields.io/badge/License-MIT-success?style=for-the-badge)
+![HuggingFace](https://img.shields.io/badge/Hugging%20Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)
+![ChromaDB](https://img.shields.io/badge/ChromaDB-5B4BDB?style=for-the-badge)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
 
 </p>
 
