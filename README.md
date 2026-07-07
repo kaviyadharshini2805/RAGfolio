@@ -3,17 +3,19 @@
 <p align="center">
   <h3 align="center">AI Portfolio Assistant powered by Retrieval-Augmented Generation (RAG)</h3>
   <p align="center">
-    Answer questions about your resume, skills, projects, education, and experience using semantic search and Large Language Models.
+    Answer questions about a professional profile using semantic search, vector embeddings, and Google Gemini.
   </p>
 </p>
 
 <p align="center">
 
-![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge\&logo=python\&logoColor=white)
+![RAG](https://img.shields.io/badge/RAG-Retrieval--Augmented--Generation-2563EB?style=for-the-badge)
+![Google Gemini](https://img.shields.io/badge/Google-Gemini-4285F4?style=for-the-badge\&logo=google\&logoColor=white)
 ![LangChain](https://img.shields.io/badge/LangChain-Framework-121212?style=for-the-badge)
-![OpenAI](https://img.shields.io/badge/OpenAI-GPT-412991?style=for-the-badge&logo=openai&logoColor=white)
+![Hugging Face](https://img.shields.io/badge/HuggingFace-all--MiniLM--L6--v2-FFD21E?style=for-the-badge\&logo=huggingface\&logoColor=black)
 ![ChromaDB](https://img.shields.io/badge/ChromaDB-Vector%20Database-5B4BDB?style=for-the-badge)
-![Streamlit](https://img.shields.io/badge/Streamlit-Web%20App-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-Web%20App-FF4B4B?style=for-the-badge\&logo=streamlit\&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-success?style=for-the-badge)
 
 </p>
@@ -22,24 +24,24 @@
 
 ## Overview
 
-RAGfolio is a Retrieval-Augmented Generation (RAG) application that serves as an AI-powered portfolio assistant.
+RAGfolio is an AI-powered portfolio assistant built using Retrieval-Augmented Generation (RAG). It answers natural language questions about a professional profile—including skills, projects, work experience, education, certifications, and achievements—by retrieving relevant information from a personalized knowledge base.
 
-Instead of relying solely on a language model's internal knowledge, the application retrieves relevant information from a personal knowledge base before generating responses. This enables accurate, context-aware answers about professional experience, technical skills, projects, education, and other portfolio information.
+Instead of relying solely on a language model's pretrained knowledge, RAGfolio performs semantic search over indexed documents, retrieves the most relevant information, and uses Google Gemini to generate accurate, context-aware responses.
 
-The project demonstrates a complete RAG pipeline using semantic search, vector embeddings, and Large Language Models.
+This project demonstrates the implementation of a production-style RAG pipeline using LangChain, Hugging Face embeddings, ChromaDB, and Google Gemini.
 
 ---
 
 ## Features
 
-- Retrieval-Augmented Generation (RAG)
-- Semantic document search
-- Personalized knowledge base
-- OpenAI-powered response generation
-- ChromaDB vector database
-- Streamlit web interface
-- Modular and extensible architecture
-- Refreshable document indexing
+* Retrieval-Augmented Generation (RAG)
+* Semantic search over portfolio documents
+* Context-aware responses using Google Gemini
+* Hugging Face sentence embeddings
+* ChromaDB vector database
+* Interactive Streamlit interface
+* Modular and extensible architecture
+* Refreshable knowledge base
 
 ---
 
@@ -49,23 +51,37 @@ The project demonstrates a complete RAG pipeline using semantic search, vector e
                     User Question
                           │
                           ▼
-                 Generate Embedding
+              Generate Query Embedding
                           │
                           ▼
-                ChromaDB Vector Search
+               ChromaDB Vector Search
                           │
                           ▼
-              Retrieve Relevant Chunks
+           Retrieve Relevant Documents
                           │
                           ▼
-               Prompt Augmentation (RAG)
+            Prompt Augmentation (RAG)
                           │
                           ▼
-                  OpenAI Chat Model
+                  Google Gemini
                           │
                           ▼
-                  Contextual Response
+                  Generated Response
 ```
+
+---
+
+## Technology Stack
+
+| Category        | Technology                                              |
+| --------------- | ------------------------------------------------------- |
+| Language        | Python                                                  |
+| Framework       | LangChain                                               |
+| LLM             | Google Gemini                                           |
+| Embeddings      | Hugging Face (`sentence-transformers/all-MiniLM-L6-v2`) |
+| Vector Database | ChromaDB                                                |
+| Frontend        | Streamlit                                               |
+| Environment     | python-dotenv                                           |
 
 ---
 
@@ -81,40 +97,33 @@ RAGfolio/
 ├── .gitignore
 │
 ├── data/
-│   ├── resume.txt
 │   ├── education.txt
 │   ├── experience.txt
 │   ├── projects.txt
 │   └── skills.txt
 │
 ├── src/
+│   ├── __init__.py
 │   ├── chatbot.py
 │   ├── embeddings.py
 │   ├── loader.py
 │   ├── rag.py
-│   ├── vectordb.py
-│   └── __init__.py
+│   └── vectordb.py
 │
 ├── tests/
-│   ├── test_data_loading.py
-│   └── test_setup.py
+│   ├── test_setup.py
+│   └── test_data_loading.py
 │
-└── chroma_db/
+├── docs/
+│   ├── ARCHITECTURE.md
+│   ├── CHECKLIST.md
+│   ├── CONFIG_GUIDE.md
+│   ├── EXAMPLE_DATA.md
+│   ├── PROJECT_SUMMARY.md
+│   └── QUICKSTART.md
+│
+└── chroma_db/      # Generated automatically
 ```
-
----
-
-## Tech Stack
-
-| Category | Technology |
-|----------|------------|
-| Language | Python |
-| Framework | LangChain |
-| LLM | OpenAI GPT |
-| Embeddings | OpenAI Embeddings |
-| Vector Database | ChromaDB |
-| Frontend | Streamlit |
-| Environment | python-dotenv |
 
 ---
 
@@ -122,20 +131,16 @@ RAGfolio/
 
 ### Prerequisites
 
-- Python 3.10+
-- OpenAI API Key
-
----
+* Python 3.10 or later
+* Google AI Studio API Key
 
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/RAGfolio.git
+git clone https://github.com/<your-username>/RAGfolio.git
 
 cd RAGfolio
 ```
-
----
 
 ### Create a Virtual Environment
 
@@ -155,48 +160,39 @@ python3 -m venv venv
 source venv/bin/activate
 ```
 
----
-
 ### Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
----
-
 ### Configure Environment Variables
 
-Create a `.env` file.
+Create a `.env` file in the project root.
 
 ```env
-OPENAI_API_KEY=your_api_key
+GOOGLE_API_KEY=your_google_ai_studio_api_key
 
-CHAT_MODEL=gpt-4
+MODEL_NAME=gemini-2.5-flash
 
-EMBEDDING_MODEL=text-embedding-3-small
-
-TEMPERATURE=0.2
-
-MAX_TOKENS=500
+EMBEDDING_MODEL=sentence-transformers/all-MiniLM-L6-v2
 ```
 
 ---
 
 ## Knowledge Base
 
-The chatbot retrieves information from the following documents.
+RAGfolio retrieves information from text documents stored in the `data/` directory.
 
 ```text
 data/
-├── resume.txt
 ├── education.txt
 ├── experience.txt
 ├── projects.txt
 └── skills.txt
 ```
 
-Simply edit these files and refresh the knowledge base from the application.
+Update these files with your latest information and refresh the knowledge base from the application to rebuild the vector index.
 
 ---
 
@@ -206,72 +202,70 @@ Simply edit these files and refresh the knowledge base from the application.
 streamlit run app.py
 ```
 
-The application will be available at
+The application will be available at:
 
-```
+```text
 http://localhost:8501
 ```
 
-Initialize the knowledge base before interacting with the chatbot.
+Initialize or refresh the knowledge base from the sidebar before interacting with the chatbot.
 
 ---
 
-## Example Queries
+## Example Questions
 
 ```text
-What are your technical skills?
-
 Tell me about your projects.
 
-Describe your work experience.
+What programming languages do you know?
+
+Describe your technical skills.
 
 What is your educational background?
 
-Which technologies have you worked with?
+Summarize your work experience.
 
-Summarize your resume.
+Have you built any machine learning projects?
 
-Have you worked on machine learning projects?
+Which frameworks have you worked with?
 
-What programming languages do you know?
+What certifications do you have?
 ```
 
 ---
 
-## RAG Pipeline
+## How It Works
 
 ### Document Indexing
 
-1. Load text documents
-2. Split documents into chunks
-3. Generate embeddings
-4. Store embeddings in ChromaDB
+1. Load portfolio documents.
+2. Split documents into overlapping chunks.
+3. Generate embeddings using Hugging Face (`all-MiniLM-L6-v2`).
+4. Store embeddings in ChromaDB.
 
 ### Query Processing
 
-1. Convert user query into an embedding
-2. Retrieve relevant document chunks
-3. Build an augmented prompt
-4. Generate a response using the language model
+1. Convert the user's question into a vector embedding.
+2. Retrieve the most relevant document chunks from ChromaDB.
+3. Construct a Retrieval-Augmented prompt.
+4. Generate a response using Google Gemini.
 
 ---
 
 ## Future Improvements
 
-- PDF and DOCX support
-- Local LLM integration
-- Conversation memory
-- Source citations
-- Hybrid search
-- Voice interface
-- Authentication
-- Docker support
-- Cloud deployment
+* PDF and DOCX document support
+* Conversation memory
+* Source citations for retrieved documents
+* Resume upload interface
+* Voice interaction
+* Docker support
+* Cloud deployment
+* Authentication and user management
+* Hybrid keyword and semantic search
 
 ---
 
 ## License
 
 This project is licensed under the MIT License.
-
----
