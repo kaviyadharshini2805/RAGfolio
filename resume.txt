@@ -3,14 +3,13 @@ Contact Information
 
 Name: Kaviyadharshini M
 Email: kaviyadharshini.works@gmail.com
-Phone: +91 8270849088
 Location: Tamil Nadu, India
 LinkedIn: https://www.linkedin.com/in/kaviyadharshini-works/
 GitHub: https://github.com/kaviyadharshini2805
 
 Professional Summary
 
-Computer Science and Engineering student with hands-on experience in Data Science, Machine Learning, Generative AI, and Backend Development. Skilled in Python, FastAPI, SQL, PostgreSQL, and LLM integration, with experience building projects such as a RAG chatbot, an MCP-based file organizer, and machine learning applications.
+Computer Science and Engineering student with hands-on experience in Data Science, Machine Learning, Generative AI, and Backend Development. Skilled in JAVA, Python, FastAPI, SQL, PostgreSQL, and LLM integration, with experience building projects such as a RAG chatbot, an MCP-based file organizer, and machine learning applications.
 
 Interested in developing data-driven systems and intelligent applications by combining machine learning, backend engineering, and modern AI technologies. Strong foundation in problem-solving, data analysis, and software development, with a focus on building practical and scalable solutions.
 
