@@ -1,173 +1,277 @@
-# Personal AI Chatbot with RAG
+# RAGfolio
 
-A personal AI chatbot powered by Retrieval Augmented Generation (RAG) that answers questions about your professional background, skills, experience, and projects.
+<p align="center">
+  <h3 align="center">AI Portfolio Assistant powered by Retrieval-Augmented Generation (RAG)</h3>
+  <p align="center">
+    Answer questions about your resume, skills, projects, education, and experience using semantic search and Large Language Models.
+  </p>
+</p>
+
+<p align="center">
+
+![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![LangChain](https://img.shields.io/badge/LangChain-Framework-121212?style=for-the-badge)
+![OpenAI](https://img.shields.io/badge/OpenAI-GPT-412991?style=for-the-badge&logo=openai&logoColor=white)
+![ChromaDB](https://img.shields.io/badge/ChromaDB-Vector%20Database-5B4BDB?style=for-the-badge)
+![Streamlit](https://img.shields.io/badge/Streamlit-Web%20App-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-success?style=for-the-badge)
+
+</p>
+
+---
+
+## Overview
+
+RAGfolio is a Retrieval-Augmented Generation (RAG) application that serves as an AI-powered portfolio assistant.
+
+Instead of relying solely on a language model's internal knowledge, the application retrieves relevant information from a personal knowledge base before generating responses. This enables accurate, context-aware answers about professional experience, technical skills, projects, education, and other portfolio information.
+
+The project demonstrates a complete RAG pipeline using semantic search, vector embeddings, and Large Language Models.
+
+---
 
 ## Features
 
-- 🤖 **AI-Powered Responses**: Uses OpenAI's GPT models for natural language understanding
-- 📚 **RAG Architecture**: Retrieves relevant context from your documents before generating responses
-- 💾 **Vector Database**: ChromaDB for efficient similarity search
-- 🎨 **Modern UI**: Clean Streamlit interface for easy interaction
-- 📝 **Document Management**: Easily update your information by editing text files
+- Retrieval-Augmented Generation (RAG)
+- Semantic document search
+- Personalized knowledge base
+- OpenAI-powered response generation
+- ChromaDB vector database
+- Streamlit web interface
+- Modular and extensible architecture
+- Refreshable document indexing
+
+---
 
 ## Architecture
 
-The chatbot uses a RAG (Retrieval Augmented Generation) pipeline:
+```text
+                    User Question
+                          │
+                          ▼
+                 Generate Embedding
+                          │
+                          ▼
+                ChromaDB Vector Search
+                          │
+                          ▼
+              Retrieve Relevant Chunks
+                          │
+                          ▼
+               Prompt Augmentation (RAG)
+                          │
+                          ▼
+                  OpenAI Chat Model
+                          │
+                          ▼
+                  Contextual Response
+```
 
-1. **Document Loading**: Text files are loaded and split into chunks
-2. **Embeddings**: Text chunks are converted to vector embeddings using OpenAI
-3. **Vector Storage**: Embeddings are stored in ChromaDB for fast retrieval
-4. **Query Processing**: User questions are embedded and similar chunks are retrieved
-5. **Response Generation**: Retrieved context is passed to GPT to generate accurate answers
+---
 
 ## Project Structure
 
+```text
+RAGfolio/
+│
+├── app.py
+├── requirements.txt
+├── README.md
+├── .env.example
+├── .gitignore
+│
+├── data/
+│   ├── resume.txt
+│   ├── education.txt
+│   ├── experience.txt
+│   ├── projects.txt
+│   └── skills.txt
+│
+├── src/
+│   ├── chatbot.py
+│   ├── embeddings.py
+│   ├── loader.py
+│   ├── rag.py
+│   ├── vectordb.py
+│   └── __init__.py
+│
+├── tests/
+│   ├── test_data_loading.py
+│   └── test_setup.py
+│
+└── chroma_db/
 ```
-personal-ai-chatbot/
-├── app.py                  # Main Streamlit application
-├── requirements.txt        # Python dependencies
-├── .env                    # Environment variables (API keys)
-├── resume.txt             # Your resume information
-├── data/                  # Additional data files
-│   ├── projects.txt       # Your projects
-│   ├── skills.txt         # Your skills
-│   ├── experience.txt     # Work experience
-│   └── education.txt      # Educational background
-├── chroma_db/             # Vector database (created automatically)
-└── src/                   # Source code modules
-    ├── loader.py          # Document loading and preprocessing
-    ├── embeddings.py      # Embedding generation
-    ├── vectordb.py        # Vector database operations
-    ├── rag.py             # RAG pipeline implementation
-    └── chatbot.py         # Main chatbot logic
-```
 
-## Setup Instructions
+---
 
-### 1. Prerequisites
+## Tech Stack
 
-- Python 3.8 or higher
-- OpenAI API key
+| Category | Technology |
+|----------|------------|
+| Language | Python |
+| Framework | LangChain |
+| LLM | OpenAI GPT |
+| Embeddings | OpenAI Embeddings |
+| Vector Database | ChromaDB |
+| Frontend | Streamlit |
+| Environment | python-dotenv |
 
-### 2. Installation
+---
+
+## Getting Started
+
+### Prerequisites
+
+- Python 3.10+
+- OpenAI API Key
+
+---
+
+### Clone the Repository
 
 ```bash
-# Clone or download this repository
-cd personal-ai-chatbot
+git clone https://github.com/your-username/RAGfolio.git
 
-# Install dependencies
+cd RAGfolio
+```
+
+---
+
+### Create a Virtual Environment
+
+**Windows**
+
+```bash
+python -m venv venv
+
+venv\Scripts\activate
+```
+
+**Linux/macOS**
+
+```bash
+python3 -m venv venv
+
+source venv/bin/activate
+```
+
+---
+
+### Install Dependencies
+
+```bash
 pip install -r requirements.txt
 ```
 
-### 3. Configuration
+---
 
-1. Open the `.env` file and add your OpenAI API key:
-   ```
-   OPENAI_API_KEY=your_actual_api_key_here
-   ```
+### Configure Environment Variables
 
-2. Customize your information by editing the text files:
-   - `resume.txt` - Your resume and personal information
-   - `data/projects.txt` - Your projects
-   - `data/skills.txt` - Your technical and soft skills
-   - `data/experience.txt` - Your work experience
-   - `data/education.txt` - Your educational background
+Create a `.env` file.
 
-### 4. Run the Application
+```env
+OPENAI_API_KEY=your_api_key
+
+CHAT_MODEL=gpt-4
+
+EMBEDDING_MODEL=text-embedding-3-small
+
+TEMPERATURE=0.2
+
+MAX_TOKENS=500
+```
+
+---
+
+## Knowledge Base
+
+The chatbot retrieves information from the following documents.
+
+```text
+data/
+├── resume.txt
+├── education.txt
+├── experience.txt
+├── projects.txt
+└── skills.txt
+```
+
+Simply edit these files and refresh the knowledge base from the application.
+
+---
+
+## Running the Application
 
 ```bash
 streamlit run app.py
 ```
 
-The application will open in your default web browser at `http://localhost:8501`
+The application will be available at
 
-## Usage
+```
+http://localhost:8501
+```
 
-1. **Initialize Knowledge Base**: Click the "Initialize/Refresh Knowledge Base" button in the sidebar to load and process your documents
+Initialize the knowledge base before interacting with the chatbot.
 
-2. **Start Chatting**: Type questions in the chat input at the bottom of the page, such as:
-   - "What are your main technical skills?"
-   - "Tell me about your work experience"
-   - "What projects have you worked on?"
-   - "What is your educational background?"
+---
 
-3. **Refresh Data**: After updating any text files, click "Initialize/Refresh Knowledge Base" again to reload the data
+## Example Queries
 
-4. **Clear History**: Use the "Clear Chat History" button to start a fresh conversation
+```text
+What are your technical skills?
 
-## Customization
+Tell me about your projects.
 
-### Modify Data Files
+Describe your work experience.
 
-Simply edit the `.txt` files in the root directory and `data/` folder with your information. Use markdown formatting for better structure.
+What is your educational background?
 
-### Adjust Model Parameters
+Which technologies have you worked with?
 
-Edit the `.env` file to change:
-- `CHAT_MODEL`: GPT model to use (e.g., "gpt-4", "gpt-3.5-turbo")
-- `EMBEDDING_MODEL`: Embedding model (default: "text-embedding-ada-002")
-- `TEMPERATURE`: Response creativity (0.0 = focused, 1.0 = creative)
-- `MAX_TOKENS`: Maximum response length
+Summarize your resume.
 
-### Customize Prompts
+Have you worked on machine learning projects?
 
-Edit `src/rag.py` to modify the system prompt and change how the chatbot responds.
+What programming languages do you know?
+```
 
-## How It Works
+---
 
-### Document Processing
+## RAG Pipeline
 
-1. Documents are loaded from text files
-2. Text is split into overlapping chunks (1000 characters with 200 overlap)
-3. Each chunk is converted to a vector embedding
-4. Embeddings are stored in ChromaDB with metadata
+### Document Indexing
 
-### Question Answering
+1. Load text documents
+2. Split documents into chunks
+3. Generate embeddings
+4. Store embeddings in ChromaDB
 
-1. User question is converted to an embedding
-2. Most similar document chunks are retrieved from ChromaDB
-3. Retrieved context is combined with the question
-4. GPT generates a response based on the context
-5. Response is displayed in the chat interface
+### Query Processing
 
-## Technologies Used
+1. Convert user query into an embedding
+2. Retrieve relevant document chunks
+3. Build an augmented prompt
+4. Generate a response using the language model
 
-- **LangChain**: Framework for building LLM applications
-- **OpenAI**: GPT models and embeddings
-- **ChromaDB**: Vector database for embeddings
-- **Streamlit**: Web interface
-- **Python**: Core programming language
+---
 
-## Troubleshooting
+## Future Improvements
 
-### "OpenAI API key not found"
-Make sure you've set your API key in the `.env` file
+- PDF and DOCX support
+- Local LLM integration
+- Conversation memory
+- Source citations
+- Hybrid search
+- Voice interface
+- Authentication
+- Docker support
+- Cloud deployment
 
-### "Knowledge base not initialized"
-Click the "Initialize/Refresh Knowledge Base" button in the sidebar
-
-### Empty or irrelevant responses
-- Check that your text files contain sufficient information
-- Try rephrasing your question
-- Refresh the knowledge base after updating files
-
-## Future Enhancements
-
-- [ ] Support for PDF and DOCX files
-- [ ] Multi-modal support (images, code)
-- [ ] Conversation memory and context
-- [ ] Export chat history
-- [ ] Advanced analytics dashboard
-- [ ] Multiple language support
+---
 
 ## License
 
-This project is open source and available for personal use.
+This project is licensed under the MIT License.
 
-## Contributing
-
-Feel free to fork this project and customize it for your needs. Contributions and improvements are welcome!
-
-## Contact
-
-For questions or suggestions, please refer to the contact information in your `resume.txt` file.
+---
